@@ -1,0 +1,9 @@
+<h1>Your Bookings</h1>
+
+<ul>
+  <% @bookings.each do |booking| %>
+    <li>
+      <%= link_to "Booking ##{booking.id} at #{booking.property.title}", booking %>
+    </li>
+  <% end %>
+</ul>

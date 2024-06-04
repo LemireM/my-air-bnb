@@ -1,0 +1,44 @@
+<h1>New Property</h1>
+
+<%= form_with model: @property do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div>
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div>
+    <%= form.label :price_per_night %>
+    <%= form.text_field :price_per_night %>
+  </div>
+
+  <div>
+    <%= form.label :capacity %>
+    <%= form.number_field :capacity %>
+  </div>
+
+  <div>
+    <%= form.submit 'Create Property' %>
+  </div>
+<% end %>
+
+<%= link_to 'Back to Properties', properties_path %>
